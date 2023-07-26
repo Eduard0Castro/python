@@ -8,5 +8,11 @@ for i in range (1, notas + 1):
     soma += nota
 
 media = (soma) / notas
-print('A media das notas é: {:.2f}' .format(media))
+print(soma)
+print('\nA media das notas é: {:.2f}' .format(media))
+if media >= 6:
+    print('Média interessante!')
+else:
+    print('Estude mais!')
 
+    

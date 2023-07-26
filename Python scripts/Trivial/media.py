@@ -1,11 +1,11 @@
 
-# nota_1 = int(input('Informe a nota 1: '))
+nota_1 = float(input('Informe a nota 1: '))
 
-# nota_2 = int(input('Informe a nota 2: '))
+nota_2 = float(input('Informe a nota 2: '))
 
-# media = (nota_1 + nota_2)/2
+media = (nota_1 + nota_2)/2
 
-# print('A media das notas eh:', media)
+print('A media das notas eh:', media)
 
 # valor = int(input('Digite um número: '))
 
@@ -17,9 +17,9 @@
 
 # print('A soma entre {} e {} vale {} '.format(valor, valor_2, soma))
 
-valor = (input('Digite qualquer merda aqui: '))
+# valor = (input('Digite qualquer merda aqui: '))
 
-print(valor.isalpha())
+# print(valor.isalpha())
 
 
 
