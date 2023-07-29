@@ -21,3 +21,5 @@
 #   21 fundo magenta = '\033[45m'
 #   22 fundo ciano = '\033[46m'
 #   23 fundo branco = '\033[47m'
+
+cores  = {'vermelho':'\033[31m', 'verde':'\033[31m', 'azul':'\033[34m' , 'amarelo':'\033[33m'}
