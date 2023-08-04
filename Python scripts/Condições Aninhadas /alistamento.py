@@ -1,7 +1,7 @@
 from datetime import datetime
-ano = str(input('Digite a sua data de nascimento com o dia o mes e o ano separados por espaço: '))
+ano = str(input('Digite a sua data de nascimento: '))
 
-ano = ano.split()
+ano = ano.split('/')
 print(ano)
 ano_i = int(ano[2])
 data_atual = datetime.today()
