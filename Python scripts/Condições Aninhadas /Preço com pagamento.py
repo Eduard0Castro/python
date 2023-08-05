@@ -14,7 +14,6 @@ elif pag == 'duas vezes no cartao':
     print('O preço é de {}' .format(valor*1))
 elif pag == 'tres vezes ou mais no cartao':
     print('O valor é de {}' .format(1.2*valor))
-
 else:
     print('\033[31mDIGITA DIREITO!!!\033[m')
 
