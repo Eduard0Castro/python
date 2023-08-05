@@ -1,5 +1,4 @@
 import time
-import rospy
 print ("Dê um valor")
 
 valor = int(input('Valor:' ))

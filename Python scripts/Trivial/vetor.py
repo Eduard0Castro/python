@@ -1,9 +1,9 @@
 res = int(input('Resistores: '))
 volt = int(input('Voltagem:'))
-
-for i in range (1, res+1):
-    valor = [res]
-    valor [i]= float(input('Qual o valor do resistor {}? ' .format(i)))
+valor = []
+for i in range (0, res):
+    print(i)
+    valor [i]= float(input('Qual o valor do resistor {}? ' .format(i+1)))
 
 for j in range (1, volt+1):
     valor_2 = [volt]
