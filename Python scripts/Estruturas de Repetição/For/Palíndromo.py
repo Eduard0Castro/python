@@ -9,7 +9,9 @@ count_2 = 0
 
 for palavra in div:
     if palavra != ' ':
+        print(palavra)
         sem_espaco += palavra
+        print(sem_espaco)
         count +=1
 tam = len(sem_espaco)
 tam_2 = tam
