@@ -11,9 +11,9 @@ while res != 'N':
     count +=1
     heil += n
     
-    #para o primeiro valor digitado, menor recebe n
+    #para o primeiro valor digitado, menor e maior recebem n
     if count == 1:
-        menor = n 
+        menor = n = maior
 
     if maior < n:
         maior = n
