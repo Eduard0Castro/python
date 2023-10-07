@@ -29,11 +29,11 @@ while True:
             print("Você perdeu!\n")
             break
         else:
-            print("Você ganhou!\n")
+            print("Você venceu!\n")
             cont += 1
 
     
 
-print("Acabou!!!\nVocê venceu {} vezes" .format(cont))
+print("\033[31mAcabou!!!\33[m\n\033[32mVocê venceu {} vezes\033[m" .format(cont))
 
 
