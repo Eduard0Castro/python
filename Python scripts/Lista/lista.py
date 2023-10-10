@@ -3,6 +3,7 @@ lista = [1, 2, 4, 3, 8, 6, 5, 6, 7, 9]
 print("adicionar à última posição da lista: ")
 lista.append(98)
 print(lista)
+#para um for, posso fazer um lista += [variavel] também
 
 print("lista organizada do maior para o menor:")
 lista.sort(reverse = True)
