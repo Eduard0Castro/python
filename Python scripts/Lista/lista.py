@@ -44,7 +44,8 @@ print(lista)
 print(a)
 
 print("Resolvendo: ")
-b = a[:] #pegando os valores de a para b; Uma cópia de a!
-b[0] = 333
+b = a[:] #pegando os valores de a para b; Uma cópia de a! Fatiamento de dados
+b.append(a[:])
+b[9][2] =  b[0]= 333
 print(a)
 print(b)

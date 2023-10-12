@@ -20,6 +20,7 @@ while True:
     resized = cv2.resize(frame, (width, height))
     espelhada = cv2.flip(resized, 1)
     #convert = cv2.cvtColor(resized, cv2.COLOR_RGB2BGR)
+    
 # adicionar o frame ao arquivo do video
     output.write(espelhada)
 

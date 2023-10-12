@@ -8,7 +8,7 @@ for i in range (0, 5):
         hugo.append(n)
         
 
-    for j in range (0, i+1):
+    for j in range (0, i+1): #i+1 para j chegar em todos os índices 
         if n < hugo[j]:
             hugo.insert(j, n)
             print("Adicionado a {}ª posição!" .format(j+1))
