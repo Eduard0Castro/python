@@ -1,23 +1,12 @@
-hugo = []
-nome = []
-notas = []
 princ = []
 
 while True:
-    nome.append(str(input("Nome: ")))
-    notas.append(float(input("Nota 1: ")))
-    notas.append(float(input("Nota 2: ")))
-    
-    media = (notas[0] + notas[1])/2
+    nome = (str(input("Nome: ")))
+    nota1 = (float(input("Nota 1: ")))
+    nota2 = (float(input("Nota 2: ")))
+    media = (nota1 + nota2)/2
 
-    notas.append(media)
-    hugo.append(nome[:])
-    hugo.append(notas[:])
-    princ.append(hugo[:])
-
-    nome.clear()
-    notas.clear()
-    hugo.clear()
+    princ.append([[nome], [nota1, nota2, media]])
 
     p = ""
     while p != "N" and p != "S":
