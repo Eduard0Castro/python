@@ -1,5 +1,6 @@
 filme = {'título': 'O Senhor dos Anéis', 'ano':'2000', 'diretor': 'Peter Jackson'}
 lista = [filme]
+dic = {}
 
 del(filme['ano'])
 filme['produtora'] = 'New Line Cinema'
@@ -8,3 +9,5 @@ print(filme.values())
 print(filme.keys())
 print(filme.items())
 print(lista[0]['diretor'])
+
+dic = filme.copy()

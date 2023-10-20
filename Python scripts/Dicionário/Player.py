@@ -1,18 +1,39 @@
-player = {}
-player['Nome'] = str(input("Digite o nome do jogador: "))
-player['Partidas'] = int(input("Quantas partidas esse jogador jogou? "))
-player['Goals'] = []
-soma = 0 
-for i in range (0, player['Partidas']):
-    player['Goals'].append(int(input("Digite quantos gols {} fez na {}ª partida: "
-                                      .format(player['Nome'], i + 1))))
-    soma += player['Goals'][i]
+players = []
+inter = {}
+
+while True:
+
+    inter['Nome'] = str(input("Digite o nome do jogador: "))
+    inter['Partidas'] = int(input("Quantas partidas esse jogador jogou? "))
+    inter['Goals'] = []
+    soma = 0 
+    for i in range (0, inter['Partidas']):
+        inter['Goals'].append(int(input("Digite quantos gols {} fez na {}ª partida: "
+                                      .format(inter['Nome'], i + 1))))
+        soma += inter['Goals'][i]
+
+    inter['Total'] = soma
+
+    players.append(inter.copy())
+    c = ""
     
-player['Total'] = soma
-print(player)
+    while c != 'N' and c != 'S':
+        c = str(input("Quer continuar? [S/N]: ")).upper()
 
-print(f"\nO jogador {player['Nome']} jogou {player['Partidas']} partidas.")
-for i in range (0, player['Partidas']):
-    print(f"Na {i+1}ª partida ele guardou {player['Goals'][i]}")
+    if c == 'N':
+        break
 
-print(f"Concluindo o campeonato com um total de {player['Total']} gols!")
+print(players)
+print("")
+for pos, j in enumerate(players):
+    print(f"{pos:<2} {j['Nome']:<5} ", f"{j['Goals']}",f"{j['Total']:>10}")
+
+while True:
+    print("")
+    jog = int(input("Quer ver os dados de qual jogador? (-1 para sair!): "))
+    if jog == -1:
+        break
+    for r in range(0, players[jog]['Partidas']):
+        print(f"Na {r + 1}ª partida o jogador {players[jog]['Nome']} marcou {players[jog]['Goals'][r]}")
+
+    
