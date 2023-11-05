@@ -23,3 +23,13 @@
 #   23 fundo branco = '\033[47m'
 
 cores  = {'vermelho':'\033[31m', 'verde':'\033[31m', 'azul':'\033[34m' , 'amarelo':'\033[33m'}
+
+c = ('\033[m',   #0 - sem cor
+     '\033[31m', #1 - vermelho 
+     '\033[32m', #2 - verde
+     '\033[33m', #3 - amarelo
+     '\033[34m', #4 - azul
+     '\033[35m', #5 - magenta
+     '\033[36m') #6 - ciano
+
+print(f"{c[2]}Olá{c[0]} Eduardo")
