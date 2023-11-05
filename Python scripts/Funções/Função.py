@@ -30,7 +30,7 @@ param (1,2,3,4,4,5,7,7,8,8)
 soma = 0
 hugo = list()
 def read_list():
-    global hugo
+    
     while True:
         n = int(input(f"Digite um valor para colocar na lista 'hugo' (-1 para parar): "))
         if n == -1:

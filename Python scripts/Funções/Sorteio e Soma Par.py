@@ -18,6 +18,4 @@ def somaPar(lista):
 
     print(f"\nA soma dos pares é: {soma}")
 
-
-kiko = sorteio()
-somaPar(kiko)
+somaPar(sorteio())
