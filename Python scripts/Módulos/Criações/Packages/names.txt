@@ -1,0 +1,8 @@
+Eduardo;20
+Kiko;65
+Hugo;20
+Joao;12
+Julio Valestrin;45
+Flávio;50
+Hamilton Mourão;65
+Janaína;44
