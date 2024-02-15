@@ -22,6 +22,13 @@ class ImagesProcessing:
         new = self.img[0:width, 0: height]
         return new
     
+    def resize(self):
+        maxwidth = 300
+        if self.__cols > maxwidth:
+            height = maxwidth//self.proportion
+            self.img = cv2.resize(self.img, (maxwidth, height))
+        return self.img
+
     def binary(self, thresh, inv = False):
         if inv == False:
             type = cv2.THRESH_BINARY
@@ -103,10 +110,12 @@ negative = teste.negative(0, 0, 354, 472)
 swapped = teste.swap()
 binary = teste.binary(127, True)
 julio = cube.warp(55, 179, 208, 212, 126, 386, 279, 427)
+resized = cube.resize()
 
 cv2.imshow("Binary", binary)
 cv2.imshow("Negative", negative)
 cv2.imshow("Swapped", swapped)
 cv2.imshow("Julio", julio)
+cv2.imshow("Resized", resized)
 
 cv2.waitKey()
