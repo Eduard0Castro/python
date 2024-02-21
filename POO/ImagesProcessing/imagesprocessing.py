@@ -29,7 +29,7 @@ class ImagesProcessing:
             self.img = cv2.resize(self.img, (maxwidth, height))
         return self.img
 
-    def binary(self, thresh, inv = False):
+    def binary(self, thresh = 127, inv = False):
         if inv == False:
             type = cv2.THRESH_BINARY
 
@@ -100,22 +100,28 @@ class ImagesProcessing:
         warpped = cv2.warpPerspective(self.img, matriz, (width, height))
 
         return warpped
+    
 
-eneas = cv2.imread(f"{path}/Open-CV/Images/eneas.jpg")
-cube = cv2.imread(f"{path}/Open-CV/Images/cube.jpeg")
-teste = ImagesProcessing(eneas)
-cube = ImagesProcessing(cube)
 
-negative = teste.negative(0, 0, 354, 472)
-swapped = teste.swap()
-binary = teste.binary(127, True)
-julio = cube.warp(55, 179, 208, 212, 126, 386, 279, 427)
-resized = cube.resize()
 
-cv2.imshow("Binary", binary)
-cv2.imshow("Negative", negative)
-cv2.imshow("Swapped", swapped)
-cv2.imshow("Julio", julio)
-cv2.imshow("Resized", resized)
+    
+if __name__ == "__main__":
 
-cv2.waitKey()
+    eneas = cv2.imread(f"{path}/Open-CV/Images/eneas.jpg")
+    cube = cv2.imread(f"{path}/Open-CV/Images/cube.jpeg")
+    teste = ImagesProcessing(eneas)
+    cube = ImagesProcessing(cube)
+
+    negative = teste.negative(0, 0, 354, 472)
+    swapped = teste.swap()
+    binary = teste.binary(127, True)
+    julio = cube.warp(55, 179, 208, 212, 126, 386, 279, 427)
+    resized = cube.resize()
+
+    cv2.imshow("Binary", binary)
+    cv2.imshow("Negative", negative)
+    cv2.imshow("Swapped", swapped)
+    cv2.imshow("Julio", julio)
+    cv2.imshow("Resized", resized)
+
+    cv2.waitKey()

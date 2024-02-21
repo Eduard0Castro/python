@@ -1,7 +1,7 @@
 from people import People
 
 p1 = People(43, 21, "M", "Brasileiro", False, True)
-p2 = People('Fabrício', 43, 'Masculino', 'Inglês', True, False)
+p2 = People('Fabrício', 43, 'Masculino', 'Inglês', True, False, "156.423.987-56")
 p1.imprimir()
 p2.imprimir()
 
@@ -35,9 +35,18 @@ print(People.gera_id())
 People.teste = "Alterada"
 p1.teste = "Instância de People p1 sobrepondo variável de classe"
 print(People.teste)
-print(p1.teste) #O interpretador do python procura primeiro na instancia o valor e depois na classe
+print(p1.teste) # O interpretador do python procura primeiro na instancia o valor e depois na classe
 print(p2.teste)
 print(p1.__dict__) # Aqui há 'teste' na instância
 print(p2.__dict__) # Aqui só há 'teste' na classe, por isso não aparece
 
+# Método privado(não é possível acessá-lo diretamente):
+# print(p2.__present_documentation())
+
+# Maneira de acessá-lo com uma método acessível pela instância
+print(p2.olha_as_manha())
+print(p1.olha_as_manha())
+
+print(p1)
+print(p2)
 
