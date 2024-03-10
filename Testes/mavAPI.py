@@ -206,7 +206,7 @@ class System:
         self.set_mode('GUIDED')
         self._startup()
         self._arm_srv(1)
-        self.delay(1.5)
+        self.delay(3)
         rospy.loginfo("-- Arming")
 
 

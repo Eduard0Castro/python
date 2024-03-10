@@ -61,7 +61,8 @@ class People:
     
     # Método estático não utiliza nem a classe nem a instância
     # Como se fosse uma função normal que está dentro da classe por organização
-    # Pode ser utilizado tanto pela instancia quanto pela classe em si
+    # Pode ser utilizado tanto pela instancia quanto pela classe em si, mas não tem acesso a 
+    # membros do objeto nem da classe
     @staticmethod
     def gera_id():
         id = randint(0, 100)
