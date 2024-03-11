@@ -50,3 +50,6 @@ print(p1.olha_as_manha())
 print(p1)
 print(p2)
 
+p2.name = "Guilherme"
+print(p2)
+

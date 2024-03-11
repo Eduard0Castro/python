@@ -78,7 +78,6 @@ class People:
 
         if not isinstance(value, str):
             value = str(value)
-        print("I'm here")
         self._name = value.capitalize()
 
     def __present_documentation(self):
