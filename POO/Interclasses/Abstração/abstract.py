@@ -27,7 +27,9 @@ class Daughter(AbstractClass):
         print("Hello, Julio")
 
     def abstract_method(self):
-        return super().abstract_method()
+        
+        #Super para se referir a classe mãe e não haver recursividade:
+        return super().abstract_method() 
 
 if __name__ == "__main__":
 
