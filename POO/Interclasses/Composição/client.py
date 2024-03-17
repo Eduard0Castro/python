@@ -27,7 +27,7 @@ class Client:
 
     def list_adresses(self):
         for i, adress in enumerate(self.adresses):
-            print("Endereço {} {}" .format(i+1, self.__nome))
+            print("Endereço {} de {}" .format(i+1, self.__nome))
             adress.show_adress()
 
     def __del__(self):
