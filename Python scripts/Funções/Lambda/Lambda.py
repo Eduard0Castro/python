@@ -11,6 +11,8 @@ hugo = [(1,6), (0, -2), (3,4), (4,8)]
 print(square(16))
 print(nothing())
 
+#Envia cada elemento para a função lambda que devolve o primeiro elemento de cada tupla. Esse elemento é
+#usado como key para ordenar a lista
 hugo.sort(key=lambda x:x[0])
 
 print(hugo)

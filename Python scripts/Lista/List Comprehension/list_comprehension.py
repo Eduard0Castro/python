@@ -4,6 +4,7 @@ print(lista)
 pares = [num for num in range(21) if num%2==0]
 print(pares)
 
+#Coloca 3 vezes i e contagem de j para todo i ímpar:
 hugo = [(i,j) for i in range (10)  for j in range (3) if i%2!=0]
 #ou [(i,j) for i in range (10) if i%2!=0 for j in range (3)]
 print(hugo)
