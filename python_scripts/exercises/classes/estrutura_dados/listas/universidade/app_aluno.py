@@ -1,5 +1,5 @@
-from disciplina import Disciplina
-from aluno import Aluno
+from estrutura_dados.listas.universidade.disciplina import Disciplina
+from estrutura_dados.listas.universidade.aluno import Aluno
 
 poo = Disciplina("POO", "Andrew Bernardino", 64, "LEC I")
 micro = Disciplina("Microcontroladores e microprocessadores", "Noel Maurilio", 32, "I1128")

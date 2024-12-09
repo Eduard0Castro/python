@@ -12,6 +12,7 @@ class Lista:
     def __init__(self):
         self.ini: No = None
         self.fim: No = None
+        self.iteracoes = 0
 
     def insere(self, num: int) -> None:
          
@@ -72,7 +73,17 @@ class Lista:
             aux.anterior.prox = aux.prox
             aux.prox.anterior = aux.anterior
 
-        
+    def search(self, num: int) -> None:
+        aux = self.ini
+        if aux is not None:
+            
+            while aux.num != num: 
+                self.iteracoes += 1
+                aux = aux.prox
+
+                if aux == None: 
+                    print("Não há esse numero na lista")
+                    break
 
 
     def imprime(self) -> None:
@@ -96,6 +107,7 @@ def main():
 
     escolhido = choice(guarda_num)
     print("\nPara remover: {}\n" .format(escolhido))
+    lista.search(22)
     lista.remover(escolhido)
     lista.imprime()
 

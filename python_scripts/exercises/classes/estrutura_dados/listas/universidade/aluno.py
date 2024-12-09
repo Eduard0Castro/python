@@ -1,5 +1,6 @@
-from disciplina import Disciplina
-from historico import Historico
+from estrutura_dados.listas.universidade.disciplina import Disciplina
+from estrutura_dados.listas.universidade.historico import Historico
+
 
 from typing import List
 

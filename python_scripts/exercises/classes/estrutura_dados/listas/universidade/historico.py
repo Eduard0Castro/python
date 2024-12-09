@@ -1,5 +1,6 @@
 import datetime
-from disciplina import Disciplina
+from estrutura_dados.listas.universidade.disciplina import Disciplina
+
 class Historico:
     def __init__(self, disciplinas_iniciais: list[Disciplina]):
         self.data_matricula = datetime.datetime.today()
